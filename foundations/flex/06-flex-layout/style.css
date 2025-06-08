@@ -24,3 +24,53 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  /*space-between since two separate lists*/
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  /*space-between since two separate lists*/
+  justify-content: space-between;
+  padding: 16px;
+  background: #eee;
+}
+
+/* color and remove link look from links */
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+/* format bullet list */
+ul {
+  display: flex;
+  list-style: none; /* remove bullets*/
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 16px;
+}
